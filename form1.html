@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College form</title>
+    <link rel="icon" href="https://picsum.photos/id/237/200/300">
+    <style>
+        body{
+            background-color: aqua;
+            margin-left: 5%;
+        }
+        
+        table,tr,th,td {
+            background-color: whitesmoke;
+            margin-left: 25%;
+            font-size: large;
+            color: blue;
+        }
+        .input{
+            background-color: white;
+            
+        }
+        .input:hover{
+            background-color: red;
+            
+        }
+
+
+        </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Personal Details</th>
+        </tr>
+
+        <tr>
+            <td>Firstname : </td>
+            <td><input type="text" name="Firstname" placeholder="Firstname"></td>
+
+        </tr>
+        <tr>
+            <td>Lastname : </td>
+            <td><input type="text" name="Lastname" placeholder="Lastname"></td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td><input type="email" name="Email1" required></td>
+        </tr>
+        <tr>
+            <td>Date of birth : </td>
+            <td><input type="date" name="DOB"></td>
+        </tr>
+        <tr>
+            <td>password : </td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number : </td>
+            <td><input type="text" name="mobilenumber" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="Male">Male
+                <input type="radio" name="Female">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Hobby</td>
+            <td><input type="checkbox" name="reading">reading
+                <input type="checkbox" name="Listening">Listening music
+                <input type="checkbox" name="playing">playing
+
+            </td>
+        </tr>
+
+        <tr>
+            <th>Qualification</th>
+        </tr>
+
+
+        <tr>
+            <td>year of 10th passing</td>
+            <td><select>
+                    <option></option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>Upload class 10 marksheet : </td>
+            <td><input type="file" name="10"></td>
+        </tr>
+        <tr>
+            <td>year of 12th passing</td>
+            <td><select>
+                    <option></option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>Upload class 12 marksheet : </td>
+            <td><input type="file" name="12"></td>
+        </tr>
+        <tr>
+            <td>skills that you are comfortable with</td>
+            <td><input type="checkbox" name="C">C
+                <input type="checkbox" name="C++">C++
+                <input type="checkbox" name="JAVA">JAVA
+                <input type="checkbox" name="SQL">SQL
+
+            </td>
+        </tr>
+        <tr>
+            <td>Work Experience in any stream</td>
+            <td><input type="radio" name="1">1 year
+                <input type="radio" name="2">2 year
+                <input type="radio" name="3">3 year
+                <input type="radio" name="4">4 year
+            </td>
+        </tr>
+        <tr>
+            <td>Extra certificate activities : </td>
+            <td><input type="file" name="activities" multiple></td>
+        </tr>
+
+        <tr>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="messages" rows="10" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 38%;"><input class="input" type="button" name="submit" value="submit">
+                <input type="reset" value="reset">
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
